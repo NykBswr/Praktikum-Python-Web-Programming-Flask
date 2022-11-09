@@ -1,0 +1,134 @@
+*, body{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(254, 254, 254);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+main{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;
+    filter: drop-shadow(0 0 0.1rem black);
+}
+h3{
+    font-size: 22px;
+}
+i{
+    color: rgb(41, 9, 72);
+}
+
+.info ul{
+    padding: 0.5rem;
+}
+.info, .skill{
+    padding: 1rem;
+    line-height: 2;
+}
+.left, .experience, .education{
+    background-color: rgb(241, 241, 241);
+}
+.left-img{
+    position: relative;
+}
+.left-img img{
+    width: 100%;
+}
+.name{
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.experience{
+    line-height: 2;
+    padding: 1.5rem;
+}
+.education{
+    line-height: 2;
+    padding: 1.5rem;
+}
+.experience ul{
+    margin: 1.5rem 0;
+}
+.organitationname{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.position, .degree{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.division, .name1{
+    font-size: 18px;
+}
+.eventname, .major{
+    font-size: 18px;
+}
+.period{
+    font-size: 17px;
+    color: rgb(41, 9, 72);
+}
+.current{
+    font-size: 13px;
+    background-color: rgb(41, 9, 72);
+    color: white;
+    padding: 0.45rem;
+    border-radius: 3px;
+}
+.education ul{
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    background-color: rgb(41, 9, 72);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: white;
+}
+.follow{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: white;
+}
+.home{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: white;
+}
+footer i{
+    color: white;
+}
+
+progress{
+    border: 0.5px solid black;
+    border-radius: 25px;
+    width: 100%;
+    height: 1rem;
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 25px;
+}
+::-webkit-progress-value {
+    background-color: rgb(41, 9, 72);
+    border-radius: 25px;
+}
+::-moz-progress-bar {
+    background-color: rgb(41, 9, 72);
+    border-radius: 25px;
+}

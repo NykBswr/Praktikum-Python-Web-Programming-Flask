@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel= "stylesheet" href= "{{ url_for('static', filename='styles/CV.css') }}">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://localhost:5000/Home/">
+            <i class="fa-solid fa-bolt"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:5000/Home/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:5000/Curriculum Vitae/">Curriculum Vitae</a>
+            </li>
+                <a class="nav-link" href="http://localhost:5000/Square Root/">Square Root</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:5000/Convert Data/">Convert Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:5000/Form/">Form</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="left">
+            <div class="left-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFmRjyGeP5XJA/profile-displayphoto-shrink_800_800/0/1633753439646?e=2147483647&v=beta&t=xJ5hM26a2vA3GNlt-0Jty9gmcv3JOLDi6yEqfB1_xr8" alt="Image">
+                <h2 class="name">Gede Nayaka Baswara</h2>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><i class="fa-solid fa-building-columns"></i> Undergraduate Data Science Technology Student at Airlangga University</li>
+                    <li><i class="fa-solid fa-location-arrow"></i>
+                        <a href="https://www.google.com/maps/place/Denpasar,+Kota+Denpasar,+Bali/@-8.6726769,115.1542328,12z/data=!3m1!4b1!4m5!3m4!1s0x2dd2409b0e5e80db:0xe27334e8ccb9374a!8m2!3d-8.6704582!4d115.2126293?hl=id"> Bali, Indonesia</a>
+                    </li>
+                    <li><i class="fa-solid fa-envelope"></i> nayakabaswara@yahoo.com</li>
+                    <li><i class="fab fa-linkedin"></i>
+                        <a href="linkedin.com/in/nayaka-baswara-711057218"> linkedin.com/in/nayaka-baswara-711057218</a>
+                    </li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> (+62) 87899608728</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="skill">
+                <h3>Skill</h3>
+                <ul>
+                    <li>
+                        <p>Python</p>
+                        <progress max="100" value="85"></progress>
+                    </li>
+                    <li>
+                        <p>Excel</p>
+                        <progress max="100" value="80"></progress>
+                    </li>
+                    <li>
+                        <p>Leadership</p>
+                        <progress max="100" value="75"></progress>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="right">
+            <div class="experience">
+                <h1><i class="fa-solid fa-gear"></i> Experience in Organization</h1>
+                <h3>Unit Kegiatan Mahasiswa Kerohanian Hindu Dharma</h3>
+                <ul>
+                    <li>
+                        <p class="position">Staff</p>
+                    </li>
+                    <li>
+                        <p class="division">Fundraising Division</p>
+                    </li>
+                    <li>
+                        <p class="period">2021 - <span class="current">Current</span></p>
+                    </li>
+                </ul>
+                <h3>Committee within Unit Kegiatan Mahasiswa Kerohanian Hindu Dharma</h3>
+                <ul>
+                    <li>
+                        <p class="position">Head of Division</p>
+                    </li>
+                    <li>
+                        <p class="division">Creative Media Division</p>
+                    </li>
+                    <li>
+                        <p class="eventname">Nirwana 2022</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="position">Head of Division</p>
+                    </li>
+                    <li>
+                        <p class="division">Public Relation Division</p>
+                    </li>
+                    <li>
+                        <p class="eventname">MAHABHARATA 2022</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="position">Staff</p>
+                    </li>
+                    <li>
+                        <p class="division">Event Division</p>
+                    </li>
+                    <li>
+                        <p class="eventname">Baksos 2022</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="position">Staff</p>
+                    </li>
+                    <li>
+                        <p class="division">Public Relation Division</p>
+                    </li>
+                    <li>
+                        <p class="eventname">SUPERMAN 2022</p>
+                    </li>
+                <ul>
+                    <li>
+                        <p class="position">Leader of The Event</p>
+                    </li>
+                    <li>
+                        <p class="eventname">SUKSESI 2022</p>
+                    </li>
+                </ul>
+                <h3>Organization in Senior High School</h3>
+                <ul>
+                    <li>
+                        <p class="organitationname">Organisasi Siswa Intra Sekolah</p>
+                    </li>
+                    <li>
+                        <p class="position">Head of Division</p>
+                    </li>
+                    <li>
+                        <p class="division">Kasie 6 &#8594 Consumption Division</p>
+                    </li>
+                    <li>
+                        <p class="period">2019 - 2020</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="organitationname">Smansa Electro Crew</p>
+                    </li>
+                    <li>
+                        <p class="division">Member</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="organitationname">Smansa Scout</p>
+                    </li>
+                    <li>
+                        <p class="division">Member</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="education">
+                <h1><i class="fa-solid fa-building-columns"></i> Education</h1>
+                <ul>
+                    <li>
+                        <p class="degree">Bachelor</p>
+                    </li>
+                    <li>
+                        <p class="name1">Airlangga University</p>
+                    </li>
+                    <li>
+                        <p class="major">Data Science Technology</p>
+                    </li>
+                    <li>
+                        <p class="period">2021 - <span class="current">Current</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p class="degree">Senior High School</p>
+                    </li>
+                    <li>
+                        <p class="name1">SMA Negeri 1 Denpasar</p>
+                    </li>
+                    <li>
+                        <p class="major">Science</p>
+                    </li>
+                    <li>
+                        <p class="period">2018 - 2021</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="follow">Follow me on Instagram</p>
+        <a href="https://www.instagram.com/nayaka_baswara/">
+            <i class="fab fa-instagram-square fa-3x"></i>
+        </a>
+    </footer>
+</body>
+</html>
